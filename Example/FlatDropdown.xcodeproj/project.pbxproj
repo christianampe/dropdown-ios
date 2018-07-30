@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03BB9165D1C1D97D46592258 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		03BB9165D1C1D97D46592258 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		31603BCEBB276F237F5837BC /* Pods_FlatDropdown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatDropdown_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		380EB0CBE06410B7FF1E3313 /* Pods-FlatDropdown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatDropdown_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatDropdown_Example/Pods-FlatDropdown_Example.release.xcconfig"; sourceTree = "<group>"; };
 		463692970926DED910CB1FBF /* Pods-FlatDropdown_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatDropdown_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlatDropdown_Tests/Pods-FlatDropdown_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,8 +42,8 @@
 		607FACE51AFB9204008FA782 /* FlatDropdown_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatDropdown_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		668BFA66C1457CF02C82A1EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		6EF486AAAF57D85FACD59E48 /* FlatDropdown.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FlatDropdown.podspec; path = ../FlatDropdown.podspec; sourceTree = "<group>"; };
+		668BFA66C1457CF02C82A1EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6EF486AAAF57D85FACD59E48 /* FlatDropdown.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FlatDropdown.podspec; path = ../FlatDropdown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3EC15337C95A0391B142BAC /* Pods_FlatDropdown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatDropdown_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE169319894FE8854414D16 /* Pods-FlatDropdown_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatDropdown_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatDropdown_Tests/Pods-FlatDropdown_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BF42172259DD12E7929895A3 /* Pods-FlatDropdown_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatDropdown_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlatDropdown_Example/Pods-FlatDropdown_Example.debug.xcconfig"; sourceTree = "<group>"; };

@@ -1,0 +1,16 @@
+PODS:
+  - FlatDropdown (0.1.0)
+
+DEPENDENCIES:
+  - FlatDropdown (from `../`)
+
+EXTERNAL SOURCES:
+  FlatDropdown:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FlatDropdown: 804549ed8d3fec97aff966bab7462a4cda2d1ece
+
+PODFILE CHECKSUM: 7c105b10609c51658ee1bf210912e7ce85b07f9e
+
+COCOAPODS: 1.5.0

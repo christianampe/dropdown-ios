@@ -1,0 +1,6 @@
+framework module Pods_FlatDropdown_Example {
+  umbrella header "Pods-FlatDropdown_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
