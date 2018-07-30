@@ -15,8 +15,8 @@
 		48C01373D84160DEB49BFF6BA4EA8EE2 /* Pods-FlatDropdown_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A8DCA0C4FFE20926A4ADF8B036AF04 /* Pods-FlatDropdown_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C75CDFBD55C42DCD3B3C690573A98FE /* Pods-FlatDropdown_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6029E5349C8EF49557C6C52599C09660 /* Pods-FlatDropdown_Tests-dummy.m */; };
 		6DF17D1E5F5911C07A322EBB43FCCBCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8C6B22D44823C12035D20D99FAA8D962 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C316BF7904CB45CD2661DC7E651D1A /* ReplaceMe.swift */; };
 		BCE2898F2F7D9AAB622611F01B333DA5 /* Pods-FlatDropdown_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB7EF9E93F8AC85719B72D4551FB6 /* Pods-FlatDropdown_Example-dummy.m */; };
+		BF9A1832210F9708006AFA55 /* FlatDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A1831210F9708006AFA55 /* FlatDropdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +62,10 @@
 		90D8741DEBB27902428C72B5C99D9378 /* Pods-FlatDropdown_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlatDropdown_Example-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A115476757E03F4D588FE943D372D454 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4C316BF7904CB45CD2661DC7E651D1A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FlatDropdown/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		B210A86A9D851085912BFB0475B96009 /* FlatDropdown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-umbrella.h"; sourceTree = "<group>"; };
 		BC5FB7EF9E93F8AC85719B72D4551FB6 /* Pods-FlatDropdown_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlatDropdown_Example-dummy.m"; sourceTree = "<group>"; };
 		BCB811D965FFCD0846BA5D5C6D4B4B3A /* FlatDropdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-prefix.pch"; sourceTree = "<group>"; };
+		BF9A1831210F9708006AFA55 /* FlatDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlatDropdown.swift; path = FlatDropdown/Classes/FlatDropdown.swift; sourceTree = "<group>"; };
 		C41F33C8FD7CBC21A30187828C877FDA /* Pods-FlatDropdown_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlatDropdown_Tests.modulemap"; sourceTree = "<group>"; };
 		E16719D37EEAA531CDDC16939FC70E33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EC515737A4DE9DF78218D6514978E0E9 /* Pods-FlatDropdown_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		704B268B7F9768235F0AAF9A6CA23BC3 /* FlatDropdown */ = {
 			isa = PBXGroup;
 			children = (
-				A4C316BF7904CB45CD2661DC7E651D1A /* ReplaceMe.swift */,
+				BF9A1831210F9708006AFA55 /* FlatDropdown.swift */,
 				A10CEDD33ECD62ADA896FCDE9129E620 /* Pod */,
 				9683D92E6A9E7BAF1B37083A1181F983 /* Support Files */,
 			);
@@ -344,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				401B59A05E82E9142297E1E10F6F4377 /* FlatDropdown-dummy.m in Sources */,
-				8C6B22D44823C12035D20D99FAA8D962 /* ReplaceMe.swift in Sources */,
+				BF9A1832210F9708006AFA55 /* FlatDropdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
