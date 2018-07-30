@@ -9,11 +9,14 @@ import FlatField
 
 // MARK: - Class Declaration
 @IBDesignable
-open class FlatDropdown {
+open class FlatDropdown: UIView {
     
     // MARK: Views
-    weak var flatField: FlatField!
-    weak var tableView: UITableView!
+    open weak var flatField: FlatField!
+    open weak var tableView: UITableView!
+    
+    // MARK: Properties
+    open weak var flatFieldHeightConstraint: NSLayoutConstraint!
     
     // MARK: IBInspectables
     @IBInspectable
@@ -78,4 +81,98 @@ open class FlatDropdown {
     
     @IBInspectable
     open var thicknessChange: CGFloat = FlatFieldConfig.default.thicknessChange
+    
+    @IBInspectable
+    open var flatFieldHeight: CGFloat = FlatDropdownConfig.default.flatFieldHeight {
+        didSet {
+            flatFieldHeightConstraint.constant = flatFieldHeight
+        }
+    }
+    
+    // MARK: Required Initalizers
+    public convenience init() {
+        self.init(frame: CGRect.zero)
+    }
+    
+    public override convenience init(frame: CGRect) {
+        self.init(frame, config: FlatFieldConfig.default, delegate: nil)
+    }
+    
+    // MARK: Programmatic Initalizer
+    public init(_ frame: CGRect,
+                config: FlatFieldConfig,
+                delegate: FloatingLabelDelegate?) {
+        
+        let flatField = FlatField()
+        self.flatField = flatField
+        
+        let tableView = UITableView()
+        self.tableView = tableView
+        
+        super.init(frame: frame)
+        
+        addViews()
+        addContraints()
+        
+        initConfig(flatFieldConfig: config)
+    }
+    
+    // MARK: Storyboard Initalizer
+    public required init?(coder aDecoder: NSCoder) {
+        
+        let flatField = FlatField()
+        self.flatField = flatField
+        
+        let tableView = UITableView()
+        self.tableView = tableView
+        
+        super.init(coder: aDecoder)
+        
+        addViews()
+        addContraints()
+        
+        initConfig()
+    }
+}
+
+// MARK: - Setup Methods
+private extension FlatDropdown {
+    func addViews() {
+        addSubview(flatField)
+        addSubview(tableView)
+    }
+    
+    func addContraints() {
+        flatField.translatesAutoresizingMaskIntoConstraints = false
+        
+        flatField.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        flatField.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        flatField.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        flatField.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        
+        let flatFieldHeightAnchor = flatField.heightAnchor.constraint(equalToConstant: flatFieldHeight)
+        flatFieldHeightAnchor.isActive = true
+        
+        flatFieldHeightConstraint = flatFieldHeightAnchor
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        tableView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+    }
+    
+    func initConfig(_ config: FlatDropdownConfig = .default,
+                    flatFieldConfig: FlatFieldConfig = .default) {
+        
+        text = flatFieldConfig.text
+        placeholderText = flatFieldConfig.placeholderText
+        textColor = flatFieldConfig.textColor
+        placeholderColor = flatFieldConfig.placeholderColor
+        underlineColor = flatFieldConfig.underlineColor
+        underlineThickness = flatFieldConfig.underlineThickness
+        thicknessChange = flatFieldConfig.thicknessChange
+        textAlignment = flatFieldConfig.textAlignment.rawValue
+    }
 }
