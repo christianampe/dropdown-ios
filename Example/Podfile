@@ -1,11 +1,18 @@
 use_frameworks!
+platform :ios, '9.3'
 
 target 'FlatDropdown_Example' do
-  pod 'FlatDropdown', :path => '../'
-
-  target 'FlatDropdown_Tests' do
-    inherit! :search_paths
-
+    pod 'FlatDropdown', :path => '../'
     
-  end
+    target 'FlatDropdown_Tests' do
+        inherit! :search_paths
+        
+    end
+end
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
 end
