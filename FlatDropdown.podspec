@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = 'A flat designed drop down for iOS useful for those who want a sleeker-looking input field.'
 
-  s.homepage         = 'https://github.com/christianampe/FlatDropdown'
+  s.homepage         = 'https://github.com/educrate/flat-dropdown-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'christianampe' => 'christianampe.work@gmail.com' }
-  s.source           = { :git => 'https://github.com/christianampe/FlatDropdown.git', :tag => s.version.to_s }
+  s.author           = { 'christianampe' => 'christianampe.educrate@gmail.com' }
+  s.source           = { :git => 'https://github.com/educrate/flat-dropdown-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
