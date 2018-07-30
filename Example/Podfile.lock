@@ -1,11 +1,11 @@
 PODS:
   - FlatDropdown (0.1.0):
-    - FlatField (~> 0.0.1)
-  - FlatField (0.0.1)
+    - FlatField (~> 0.0.2)
+  - FlatField (0.0.2)
 
 DEPENDENCIES:
   - FlatDropdown (from `../`)
-  - FlatField (~> 0.0.1)
+  - FlatField (~> 0.0.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -16,9 +16,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FlatDropdown: 4ace2a127538faf3cfbcea28fbd27041b80a1d6a
-  FlatField: d85414871d2d5776157ebcc4868fac628216385e
+  FlatDropdown: 46564a97742af66587c1853657e30a4ba68a980f
+  FlatField: 4ce34a0aee03797b0430591ac30e76c3b09175a8
 
-PODFILE CHECKSUM: 4680feb0617f21236c51f40416859eefd53852bb
+PODFILE CHECKSUM: ad6a74cba8edb39a630d1a016faa7019cea22453
 
 COCOAPODS: 1.5.0

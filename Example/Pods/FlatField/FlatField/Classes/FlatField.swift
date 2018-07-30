@@ -9,11 +9,11 @@ import UIKit
 
 // MARK: - Properties
 @IBDesignable
-public class FlatField: UIView {
+open class FlatField: UIView {
     
     // MARK: Views
-    weak var textField: UITextField!
-    weak var underline: UIView!
+    open weak var textField: UITextField!
+    open weak var underline: UIView!
     
     // MARK: Properties
     open weak var underlineHeightConstraint: NSLayoutConstraint!
@@ -168,9 +168,10 @@ public class FlatField: UIView {
     }
     
     // MARK: Storage
-    var delegate: FloatingLabelDelegate?
+    open var delegate: FloatingLabelDelegate?
 }
 
+// MARK: - Text Field Delegate Conformance
 extension FlatField: UITextFieldDelegate {
     public func textFieldDidBeginEditing(_ sender: UITextField) {
         delegate?.editingBegan(self)

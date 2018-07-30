@@ -72,7 +72,7 @@ open class FlatDropdown {
                 return
             }
             
-            textField.textAlignment = alignment
+            flatField.textField.textAlignment = alignment
         }
     }
     
