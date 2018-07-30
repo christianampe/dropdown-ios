@@ -8,5 +8,9 @@
 import Foundation
 
 public protocol FlatDropdownDelegate {
+    func didBeginEditing(_ sender: FlatDropdown)
+    func textDidChange(_ sender: FlatDropdown)
+    func didEndEditing(_ sender: FlatDropdown)
     
+    func didSelectRow(_ at: IndexPath, _ sender: FlatDropdown)
 }
