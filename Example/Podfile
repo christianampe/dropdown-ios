@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FlatDropdown_Example' do
+  pod 'FlatDropdown', :path => '../'
+
+  target 'FlatDropdown_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
