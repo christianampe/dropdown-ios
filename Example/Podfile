@@ -3,7 +3,7 @@ platform :ios, '9.3'
 
 target 'FlatDropdown_Example' do
     pod 'FlatDropdown', :path => '../'
-    'FlatField', '~> 0.0.1'
+    pod 'FlatField', '~> 0.0.1'
     
     target 'FlatDropdown_Tests' do
         inherit! :search_paths
