@@ -94,7 +94,7 @@ open class FlatField: UIView {
     // MARK: Programmatic Initalizer
     public init(_ frame: CGRect,
                 config: FlatFieldConfig,
-                delegate: FloatingLabelDelegate?) {
+                delegate: FlatFieldDelegate?) {
         
         self.delegate = delegate
         
@@ -168,7 +168,7 @@ open class FlatField: UIView {
     }
     
     // MARK: Storage
-    open var delegate: FloatingLabelDelegate?
+    open var delegate: FlatFieldDelegate?
 }
 
 // MARK: - Text Field Delegate Conformance

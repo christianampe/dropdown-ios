@@ -7,30 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050A202DFBDFC88D19E163A0B08C5293 /* FlatDropdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AECC21EF75C8766B057BEA4ABAD044 /* FlatDropdown-dummy.m */; };
-		083651B1D3C144918FA13CA1C833BD87 /* FlatDropdown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F448A240EA44F691E7B974C556F341 /* FlatDropdown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BF0C855E88D2060862B964D62D83D7 /* FlatDropdown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9DF5A5E68F4D98FE2C3DF79208750E /* FlatDropdown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1854E8A576736CDC33751B29D1F2B28E /* FlatFieldConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F560181463352C6B02464831A6856 /* FlatFieldConfig.swift */; };
 		197FD0AD57077FED106E534B85234619 /* Pods-FlatDropdown_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90D8741DEBB27902428C72B5C99D9378 /* Pods-FlatDropdown_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		481BFBC4F0F12D5D26130013A49934A8 /* FlatField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7389CA40C612681DC328459D4662E /* FlatField.swift */; };
+		1B5820C4CFBB48058DF70EDC63CEC0BE /* FlatField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A12AF3010793B5A14D71B58FBEBCAC76 /* FlatField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204A1260A2BC856D76C755FFA23471D1 /* FlatDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F434B2908BEC74A3915881B61AA0D /* FlatDropdown.swift */; };
+		2C254D200395D418DA8ECB317B4F4397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
+		458BB99E8156B05D32084C07A7E856D4 /* FlatFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040FC73A354005B89B5B5F079AB6D4F /* FlatFieldDelegate.swift */; };
 		48C01373D84160DEB49BFF6BA4EA8EE2 /* Pods-FlatDropdown_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A8DCA0C4FFE20926A4ADF8B036AF04 /* Pods-FlatDropdown_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B1932BF214BA79406ACB9A33623E2C8 /* FlatField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33D83FE76C93BA3CABC350A4719F29A /* FlatField.framework */; };
 		5C75CDFBD55C42DCD3B3C690573A98FE /* Pods-FlatDropdown_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6029E5349C8EF49557C6C52599C09660 /* Pods-FlatDropdown_Tests-dummy.m */; };
+		5EB0741E899A47F9955A68BD07DDCBF9 /* FlatDropdownDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6372F0A029FA414E261199CF6BEE290 /* FlatDropdownDelegate.swift */; };
+		644F8E6FBB351D6E3916CD36B82098C8 /* FlatField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7389CA40C612681DC328459D4662E /* FlatField.swift */; };
+		67157ED01DD71F3FE04AB1B630AD83B6 /* FlatField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D5B30D10CF91CB10277D08D11FBCE /* FlatField-dummy.m */; };
 		6DF17D1E5F5911C07A322EBB43FCCBCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
-		823B7B8CEDAD0152FC57A096DD0BDDB4 /* FlatDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9075F4625E39286DEAD8671331CE7630 /* FlatDropdown.swift */; };
-		8371773AD3F865FAEEA9A7F3E943BD95 /* FlatFieldConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F560181463352C6B02464831A6856 /* FlatFieldConfig.swift */; };
-		9D0D6E9716AA8BD11B2E124D7404E95B /* FlatField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 729D5B30D10CF91CB10277D08D11FBCE /* FlatField-dummy.m */; };
+		80081B6A2BF61DF3228B1698C8A2E5D7 /* FlatDropdownDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */; };
 		A8E84D0FE2225CBA40E2973330FA1857 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
-		BF2C7B0C210FAC3700DC9C17 /* FlatDropdownConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B0B210FAC3700DC9C17 /* FlatDropdownConfig.swift */; };
-		BF2C7B0E210FB6A800DC9C17 /* FlatDropdownDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B0D210FB6A800DC9C17 /* FlatDropdownDataSource.swift */; };
-		BF2C7B10210FB6B700DC9C17 /* FlatDropdownDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B0F210FB6B700DC9C17 /* FlatDropdownDelegate.swift */; };
-		BF2C7B12210FEA8000DC9C17 /* FlatDropdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B11210FEA8000DC9C17 /* FlatDropdownCell.swift */; };
-		BF2C7B18210FF2F300DC9C17 /* FlatDropdownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B17210FF2F300DC9C17 /* FlatDropdownTableView.swift */; };
-		C8D2C48108A8CB1A61EA02CCE3322DF2 /* FlatField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A12AF3010793B5A14D71B58FBEBCAC76 /* FlatField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A909E994775CBC7A9F79FB9DF15A66F8 /* FlatField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33D83FE76C93BA3CABC350A4719F29A /* FlatField.framework */; };
+		C93E9F07D297CFE58CC493736DBD3EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
 		D6D9594E95FCFA9430515F905F1A8498 /* Pods-FlatDropdown_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB7EF9E93F8AC85719B72D4551FB6 /* Pods-FlatDropdown_Example-dummy.m */; };
-		D9C27CDE95518A4B276B55DCEDA7FFE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
-		FD0205639F882A37BB1B508D410F1D76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
+		ECD4264E2A4D31F2BB47E66C2676552B /* FlatDropdownConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */; };
+		FFCFB8977EAA4E404DA93DBC4F2CF7B4 /* FlatDropdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C060A579A3A7FEB3C01CD776FB7350DC /* FlatDropdown-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0D790AD1DDF72D89DEB821963FCA74D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D490FDD53E7B0E2E56DC14A69CEBD950;
+			remoteInfo = FlatField;
+		};
 		3D48511D9F9C443469013AD9308CCE14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -38,97 +44,81 @@
 			remoteGlobalIDString = 327F117B940D6661B2B87098DCC4B3E4;
 			remoteInfo = "Pods-FlatDropdown_Example";
 		};
-		83B62560849241686977F5838B79979D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8635BC4236160D31C6F29E03C3D59127;
-			remoteInfo = FlatField;
-		};
 		94952C017AA6728B9574E97504D1DD97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 72DBE74C93A861F3E2C82EEE59E425F3;
+			remoteGlobalIDString = 6FDF60DEE2CD3FD181A9292A8C770175;
 			remoteInfo = FlatDropdown;
 		};
 		A8CCAC3E624E636C2A32052EBB8E380B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8635BC4236160D31C6F29E03C3D59127;
+			remoteGlobalIDString = D490FDD53E7B0E2E56DC14A69CEBD950;
 			remoteInfo = FlatField;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		035860F58C869809BE5595147324C90D /* Pods-FlatDropdown_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlatDropdown_Example.modulemap"; sourceTree = "<group>"; };
-		0441321BD620C79F165211188EF5D11B /* Pods_FlatDropdown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatDropdown_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0441321BD620C79F165211188EF5D11B /* Pods_FlatDropdown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlatDropdown_Tests.framework; path = "Pods-FlatDropdown_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownConfig.swift; path = FlatDropdown/Classes/FlatDropdownConfig.swift; sourceTree = "<group>"; };
 		11867BFAB36487C43288C05D141C8994 /* Pods-FlatDropdown_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlatDropdown_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1E9279C7AFC5266D6D0B457C804E0D5E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		1EF36DD222D3459389581EAFE2E6B3C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2466267A3770D52443DD9D35B16A078A /* Pods_FlatDropdown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatDropdown_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31F448A240EA44F691E7B974C556F341 /* FlatDropdown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-umbrella.h"; sourceTree = "<group>"; };
+		2466267A3770D52443DD9D35B16A078A /* Pods_FlatDropdown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlatDropdown_Example.framework; path = "Pods-FlatDropdown_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4F434B2908BEC74A3915881B61AA0D /* FlatDropdown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdown.swift; path = FlatDropdown/Classes/FlatDropdown.swift; sourceTree = "<group>"; };
+		324D8034767DBAA3143C2A8AAB56D7FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		37A8DCA0C4FFE20926A4ADF8B036AF04 /* Pods-FlatDropdown_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlatDropdown_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3CD70CB70B2E82120ECD52C998A4DC6D /* Pods-FlatDropdown_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		3FD0C3FBB91BA036E7D015238ADFACD2 /* FlatDropdown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlatDropdown.modulemap; sourceTree = "<group>"; };
+		3F38547A2480E8644D61F6CC075B5FF7 /* FlatDropdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-prefix.pch"; sourceTree = "<group>"; };
 		428B3733BBD0A5A51A8BEEA6F8AA70C8 /* FlatField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlatField.modulemap; sourceTree = "<group>"; };
 		4ADE106459D80CB05510138492C6C660 /* Pods-FlatDropdown_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlatDropdown_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		51F16E18485A07A20D975D2A1821C835 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownDataSource.swift; path = FlatDropdown/Classes/FlatDropdownDataSource.swift; sourceTree = "<group>"; };
 		55777928366678F07DDD6ED8797B2586 /* Pods-FlatDropdown_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Example-frameworks.sh"; sourceTree = "<group>"; };
 		587F560181463352C6B02464831A6856 /* FlatFieldConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatFieldConfig.swift; path = FlatField/Classes/FlatFieldConfig.swift; sourceTree = "<group>"; };
-		5DCDC362B68C8D3FDCD45D5E5AA28D6B /* FlatDropdown.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FlatDropdown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5FE1595DD3DE58DF1A92694AF35B0A8A /* Pods-FlatDropdown_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlatDropdown_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6029E5349C8EF49557C6C52599C09660 /* Pods-FlatDropdown_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlatDropdown_Tests-dummy.m"; sourceTree = "<group>"; };
 		61CC3E0360CAABDC6DA365D66465C436 /* FlatField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlatField.xcconfig; sourceTree = "<group>"; };
-		648B30DC8B813AD489C0038EBB127B4E /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		648B30DC8B813AD489C0038EBB127B4E /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlatField.framework; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711E345CD2956596D18D211533C71DB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		729D5B30D10CF91CB10277D08D11FBCE /* FlatField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlatField-dummy.m"; sourceTree = "<group>"; };
-		76F820752B9106706999FB79F1816A54 /* FlatDropdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatDropdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F820752B9106706999FB79F1816A54 /* FlatDropdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlatDropdown.framework; path = FlatDropdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6723ABD698A5D018D5D64BB141C9CA /* Pods-FlatDropdown_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlatDropdown_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		850111E99B10551454A6990F3D78626C /* Pods-FlatDropdown_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlatDropdown_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		865E72CD42A17C8BF42EFCBF9A82F378 /* Pods-FlatDropdown_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Example-resources.sh"; sourceTree = "<group>"; };
 		87FD3F3CD4514A1047D671E4B40A19CD /* Pods-FlatDropdown_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlatDropdown_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		89F7389CA40C612681DC328459D4662E /* FlatField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatField.swift; path = FlatField/Classes/FlatField.swift; sourceTree = "<group>"; };
-		9075F4625E39286DEAD8671331CE7630 /* FlatDropdown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdown.swift; path = FlatDropdown/Classes/FlatDropdown.swift; sourceTree = "<group>"; };
 		90D8741DEBB27902428C72B5C99D9378 /* Pods-FlatDropdown_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlatDropdown_Example-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9742745DE517236E33C85293FF41A1CA /* FlatDropdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlatDropdown.xcconfig; sourceTree = "<group>"; };
 		9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A115476757E03F4D588FE943D372D454 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A12AF3010793B5A14D71B58FBEBCAC76 /* FlatField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatField-umbrella.h"; sourceTree = "<group>"; };
-		A9F000526365E4905BD552474416F171 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6907FD917ED7CBD20DDF26D507BB0A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE22B4DBF7471E815F76D4391D0C2448 /* FlatField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatField-prefix.pch"; sourceTree = "<group>"; };
 		BC5FB7EF9E93F8AC85719B72D4551FB6 /* Pods-FlatDropdown_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlatDropdown_Example-dummy.m"; sourceTree = "<group>"; };
-		BF2C7B0B210FAC3700DC9C17 /* FlatDropdownConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatDropdownConfig.swift; path = FlatDropdown/Classes/FlatDropdownConfig.swift; sourceTree = "<group>"; };
-		BF2C7B0D210FB6A800DC9C17 /* FlatDropdownDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlatDropdownDataSource.swift; path = FlatDropdown/Classes/FlatDropdownDataSource.swift; sourceTree = "<group>"; };
-		BF2C7B0F210FB6B700DC9C17 /* FlatDropdownDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlatDropdownDelegate.swift; path = FlatDropdown/Classes/FlatDropdownDelegate.swift; sourceTree = "<group>"; };
-		BF2C7B11210FEA8000DC9C17 /* FlatDropdownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatDropdownCell.swift; sourceTree = "<group>"; };
-		BF2C7B17210FF2F300DC9C17 /* FlatDropdownTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatDropdownTableView.swift; sourceTree = "<group>"; };
+		C040FC73A354005B89B5B5F079AB6D4F /* FlatFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatFieldDelegate.swift; path = FlatField/Classes/FlatFieldDelegate.swift; sourceTree = "<group>"; };
+		C060A579A3A7FEB3C01CD776FB7350DC /* FlatDropdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlatDropdown-dummy.m"; sourceTree = "<group>"; };
 		C33D83FE76C93BA3CABC350A4719F29A /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41F33C8FD7CBC21A30187828C877FDA /* Pods-FlatDropdown_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlatDropdown_Tests.modulemap"; sourceTree = "<group>"; };
-		E2AECC21EF75C8766B057BEA4ABAD044 /* FlatDropdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlatDropdown-dummy.m"; sourceTree = "<group>"; };
-		E61F1DC41998F93A787AC3819F471BEC /* FlatDropdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-prefix.pch"; sourceTree = "<group>"; };
+		C6372F0A029FA414E261199CF6BEE290 /* FlatDropdownDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownDelegate.swift; path = FlatDropdown/Classes/FlatDropdownDelegate.swift; sourceTree = "<group>"; };
+		D2FCFF909117CEB0784048EF6253FFCC /* FlatDropdown.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FlatDropdown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DBDE3ABAF736FFA8C0C793B07477AAD3 /* FlatDropdown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlatDropdown.modulemap; sourceTree = "<group>"; };
+		EA9DF5A5E68F4D98FE2C3DF79208750E /* FlatDropdown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-umbrella.h"; sourceTree = "<group>"; };
 		EC515737A4DE9DF78218D6514978E0E9 /* Pods-FlatDropdown_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Tests-resources.sh"; sourceTree = "<group>"; };
 		F1C6DA7E2993633850032D1B94983A31 /* Pods-FlatDropdown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlatDropdown_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F353F1F78F7D319BABD38343E0D63D6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7227FCF50789D86EBCEC4798D3F4B4E /* Pods-FlatDropdown_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlatDropdown_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F806BAAE732D21BC4E798115E5C83067 /* FlatDropdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlatDropdown.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A7FC4EC098C85130FF627B57A164F06 /* Frameworks */ = {
+		40B55ECD1BB138B0418E3105F522073D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9C27CDE95518A4B276B55DCEDA7FFE0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EA68B6A47B0BBE8E1186D19970C9AF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1932BF214BA79406ACB9A33623E2C8 /* FlatField.framework in Frameworks */,
-				FD0205639F882A37BB1B508D410F1D76 /* Foundation.framework in Frameworks */,
+				A909E994775CBC7A9F79FB9DF15A66F8 /* FlatField.framework in Frameworks */,
+				2C254D200395D418DA8ECB317B4F4397 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +135,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E84D0FE2225CBA40E2973330FA1857 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACC852C356561D2B6237BCA18A39F99F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93E9F07D297CFE58CC493736DBD3EB7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +165,16 @@
 			);
 			name = "Pods-FlatDropdown_Tests";
 			path = "Target Support Files/Pods-FlatDropdown_Tests";
+			sourceTree = "<group>";
+		};
+		2639FCA028283F555968B8308CC27DE4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D2FCFF909117CEB0784048EF6253FFCC /* FlatDropdown.podspec */,
+				324D8034767DBAA3143C2A8AAB56D7FF /* LICENSE */,
+				51F16E18485A07A20D975D2A1821C835 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		2CD486E398A39386C1141BE556674213 /* Support Files */ = {
@@ -218,54 +226,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6E0DD273E5D398E656711F584A806622 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBDE3ABAF736FFA8C0C793B07477AAD3 /* FlatDropdown.modulemap */,
+				9742745DE517236E33C85293FF41A1CA /* FlatDropdown.xcconfig */,
+				C060A579A3A7FEB3C01CD776FB7350DC /* FlatDropdown-dummy.m */,
+				3F38547A2480E8644D61F6CC075B5FF7 /* FlatDropdown-prefix.pch */,
+				EA9DF5A5E68F4D98FE2C3DF79208750E /* FlatDropdown-umbrella.h */,
+				A6907FD917ED7CBD20DDF26D507BB0A9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FlatDropdown";
+			sourceTree = "<group>";
+		};
+		749D22FB026F5E15F992D6DAA4B273D4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8E5A9C7AD128258FB48138EA746443F /* FlatDropdown */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8DDB3CC6D7BC74BBB7C91F2D1AE8C350 /* Development Pods */,
+				749D22FB026F5E15F992D6DAA4B273D4 /* Development Pods */,
 				A767184B5960385615F8667FBC9E4B1E /* Frameworks */,
 				C2197836356E6E4C5ACE41F4C6792ADD /* Pods */,
 				F4B931289D887F2268FE2B493B0096B8 /* Products */,
 				67B0E879FD26D9A129F7AA7522B5FE70 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8DDB3CC6D7BC74BBB7C91F2D1AE8C350 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9A18359F39684E9B968EB0A09332E9CB /* FlatDropdown */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		9A18359F39684E9B968EB0A09332E9CB /* FlatDropdown */ = {
-			isa = PBXGroup;
-			children = (
-				9075F4625E39286DEAD8671331CE7630 /* FlatDropdown.swift */,
-				BF2C7B11210FEA8000DC9C17 /* FlatDropdownCell.swift */,
-				BF2C7B17210FF2F300DC9C17 /* FlatDropdownTableView.swift */,
-				BF2C7B0F210FB6B700DC9C17 /* FlatDropdownDelegate.swift */,
-				BF2C7B0D210FB6A800DC9C17 /* FlatDropdownDataSource.swift */,
-				BF2C7B0B210FAC3700DC9C17 /* FlatDropdownConfig.swift */,
-				CDE348F6FF7561379584C7C2EE1CA154 /* Pod */,
-				A4073096CA8A138C4BD613847AF04BDD /* Support Files */,
-			);
-			name = FlatDropdown;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		A4073096CA8A138C4BD613847AF04BDD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3FD0C3FBB91BA036E7D015238ADFACD2 /* FlatDropdown.modulemap */,
-				F806BAAE732D21BC4E798115E5C83067 /* FlatDropdown.xcconfig */,
-				E2AECC21EF75C8766B057BEA4ABAD044 /* FlatDropdown-dummy.m */,
-				E61F1DC41998F93A787AC3819F471BEC /* FlatDropdown-prefix.pch */,
-				31F448A240EA44F691E7B974C556F341 /* FlatDropdown-umbrella.h */,
-				A9F000526365E4905BD552474416F171 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FlatDropdown";
 			sourceTree = "<group>";
 		};
 		A767184B5960385615F8667FBC9E4B1E /* Frameworks */ = {
@@ -282,8 +274,10 @@
 			children = (
 				89F7389CA40C612681DC328459D4662E /* FlatField.swift */,
 				587F560181463352C6B02464831A6856 /* FlatFieldConfig.swift */,
+				C040FC73A354005B89B5B5F079AB6D4F /* FlatFieldDelegate.swift */,
 				2CD486E398A39386C1141BE556674213 /* Support Files */,
 			);
+			name = FlatField;
 			path = FlatField;
 			sourceTree = "<group>";
 		};
@@ -295,14 +289,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CDE348F6FF7561379584C7C2EE1CA154 /* Pod */ = {
+		E8E5A9C7AD128258FB48138EA746443F /* FlatDropdown */ = {
 			isa = PBXGroup;
 			children = (
-				5DCDC362B68C8D3FDCD45D5E5AA28D6B /* FlatDropdown.podspec */,
-				1E9279C7AFC5266D6D0B457C804E0D5E /* LICENSE */,
-				1EF36DD222D3459389581EAFE2E6B3C7 /* README.md */,
+				2E4F434B2908BEC74A3915881B61AA0D /* FlatDropdown.swift */,
+				0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */,
+				52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */,
+				C6372F0A029FA414E261199CF6BEE290 /* FlatDropdownDelegate.swift */,
+				2639FCA028283F555968B8308CC27DE4 /* Pod */,
+				6E0DD273E5D398E656711F584A806622 /* Support Files */,
 			);
-			name = Pod;
+			name = FlatDropdown;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F4B931289D887F2268FE2B493B0096B8 /* Products */ = {
@@ -335,19 +333,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC7B04FBFA0F5F2DFCBFC2F4502411FE /* Headers */ = {
+		B122AD9B184F8FAEB0AB87EC2DF8FC64 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				083651B1D3C144918FA13CA1C833BD87 /* FlatDropdown-umbrella.h in Headers */,
+				1B5820C4CFBB48058DF70EDC63CEC0BE /* FlatField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F73FE6F7DAB0EE0D024B45F891C81D90 /* Headers */ = {
+		E15DF041377B4A0ABC3C495CE79D5857 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8D2C48108A8CB1A61EA02CCE3322DF2 /* FlatField-umbrella.h in Headers */,
+				00BF0C855E88D2060862B964D62D83D7 /* FlatDropdown-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,31 +389,31 @@
 			productReference = 0441321BD620C79F165211188EF5D11B /* Pods_FlatDropdown_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		72DBE74C93A861F3E2C82EEE59E425F3 /* FlatDropdown */ = {
+		6FDF60DEE2CD3FD181A9292A8C770175 /* FlatDropdown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B7E2E2C80D5E0CDF764E48D78C32C77 /* Build configuration list for PBXNativeTarget "FlatDropdown" */;
+			buildConfigurationList = 300F0B848C1899663112BC52033BC438 /* Build configuration list for PBXNativeTarget "FlatDropdown" */;
 			buildPhases = (
-				38E1E8B80B90B764DD1E6A237B119309 /* Sources */,
-				5EA68B6A47B0BBE8E1186D19970C9AF8 /* Frameworks */,
-				CC7B04FBFA0F5F2DFCBFC2F4502411FE /* Headers */,
+				9A3CB77A316C0A7C4A11C2BFEB9ADCAB /* Sources */,
+				40B55ECD1BB138B0418E3105F522073D /* Frameworks */,
+				E15DF041377B4A0ABC3C495CE79D5857 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				17826F16EFEE2C0E214643F94AF0EE3A /* PBXTargetDependency */,
+				AC25C16381CE766D3FD64865A6A9184B /* PBXTargetDependency */,
 			);
 			name = FlatDropdown;
 			productName = FlatDropdown;
 			productReference = 76F820752B9106706999FB79F1816A54 /* FlatDropdown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8635BC4236160D31C6F29E03C3D59127 /* FlatField */ = {
+		D490FDD53E7B0E2E56DC14A69CEBD950 /* FlatField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0451DC28162928034349F73068C5355 /* Build configuration list for PBXNativeTarget "FlatField" */;
+			buildConfigurationList = 3BFED077280274501DD7281D6C8DD28A /* Build configuration list for PBXNativeTarget "FlatField" */;
 			buildPhases = (
-				4B7DDF81E53A2B5FE3D94DD745737462 /* Sources */,
-				5A7FC4EC098C85130FF627B57A164F06 /* Frameworks */,
-				F73FE6F7DAB0EE0D024B45F891C81D90 /* Headers */,
+				38801BC33DB27981EEAD70739EB54187 /* Sources */,
+				ACC852C356561D2B6237BCA18A39F99F /* Frameworks */,
+				B122AD9B184F8FAEB0AB87EC2DF8FC64 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -447,8 +445,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72DBE74C93A861F3E2C82EEE59E425F3 /* FlatDropdown */,
-				8635BC4236160D31C6F29E03C3D59127 /* FlatField */,
+				6FDF60DEE2CD3FD181A9292A8C770175 /* FlatDropdown */,
+				D490FDD53E7B0E2E56DC14A69CEBD950 /* FlatField */,
 				327F117B940D6661B2B87098DCC4B3E4 /* Pods-FlatDropdown_Example */,
 				57A670DCF705C88E696D63EE6DD164F4 /* Pods-FlatDropdown_Tests */,
 			);
@@ -464,27 +462,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38E1E8B80B90B764DD1E6A237B119309 /* Sources */ = {
+		38801BC33DB27981EEAD70739EB54187 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050A202DFBDFC88D19E163A0B08C5293 /* FlatDropdown-dummy.m in Sources */,
-				823B7B8CEDAD0152FC57A096DD0BDDB4 /* FlatDropdown.swift in Sources */,
-				BF2C7B18210FF2F300DC9C17 /* FlatDropdownTableView.swift in Sources */,
-				BF2C7B0E210FB6A800DC9C17 /* FlatDropdownDataSource.swift in Sources */,
-				BF2C7B0C210FAC3700DC9C17 /* FlatDropdownConfig.swift in Sources */,
-				BF2C7B10210FB6B700DC9C17 /* FlatDropdownDelegate.swift in Sources */,
-				BF2C7B12210FEA8000DC9C17 /* FlatDropdownCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B7DDF81E53A2B5FE3D94DD745737462 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D0D6E9716AA8BD11B2E124D7404E95B /* FlatField-dummy.m in Sources */,
-				481BFBC4F0F12D5D26130013A49934A8 /* FlatField.swift in Sources */,
-				8371773AD3F865FAEEA9A7F3E943BD95 /* FlatFieldConfig.swift in Sources */,
+				67157ED01DD71F3FE04AB1B630AD83B6 /* FlatField-dummy.m in Sources */,
+				644F8E6FBB351D6E3916CD36B82098C8 /* FlatField.swift in Sources */,
+				1854E8A576736CDC33751B29D1F2B28E /* FlatFieldConfig.swift in Sources */,
+				458BB99E8156B05D32084C07A7E856D4 /* FlatFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,15 +481,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A3CB77A316C0A7C4A11C2BFEB9ADCAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCFB8977EAA4E404DA93DBC4F2CF7B4 /* FlatDropdown-dummy.m in Sources */,
+				204A1260A2BC856D76C755FFA23471D1 /* FlatDropdown.swift in Sources */,
+				ECD4264E2A4D31F2BB47E66C2676552B /* FlatDropdownConfig.swift in Sources */,
+				80081B6A2BF61DF3228B1698C8A2E5D7 /* FlatDropdownDataSource.swift in Sources */,
+				5EB0741E899A47F9955A68BD07DDCBF9 /* FlatDropdownDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		17826F16EFEE2C0E214643F94AF0EE3A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FlatField;
-			target = 8635BC4236160D31C6F29E03C3D59127 /* FlatField */;
-			targetProxy = 83B62560849241686977F5838B79979D /* PBXContainerItemProxy */;
-		};
 		1895EC10FF38461817987AD1880027E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FlatDropdown_Example";
@@ -514,83 +505,24 @@
 		735BD16FFE73CD6F18E97E5057ADD3E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlatDropdown;
-			target = 72DBE74C93A861F3E2C82EEE59E425F3 /* FlatDropdown */;
+			target = 6FDF60DEE2CD3FD181A9292A8C770175 /* FlatDropdown */;
 			targetProxy = 94952C017AA6728B9574E97504D1DD97 /* PBXContainerItemProxy */;
+		};
+		AC25C16381CE766D3FD64865A6A9184B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlatField;
+			target = D490FDD53E7B0E2E56DC14A69CEBD950 /* FlatField */;
+			targetProxy = 0D790AD1DDF72D89DEB821963FCA74D6 /* PBXContainerItemProxy */;
 		};
 		B83C9D8E1AF23A3D0ABD4A3E09E2361B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FlatField;
-			target = 8635BC4236160D31C6F29E03C3D59127 /* FlatField */;
+			target = D490FDD53E7B0E2E56DC14A69CEBD950 /* FlatField */;
 			targetProxy = A8CCAC3E624E636C2A32052EBB8E380B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0583EF7C10C61181D5577CAAFF87BED4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61CC3E0360CAABDC6DA365D66465C436 /* FlatField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlatField/FlatField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlatField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlatField/FlatField.modulemap";
-				PRODUCT_MODULE_NAME = FlatField;
-				PRODUCT_NAME = FlatField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0B56495C06CDA6BC277CF2289AD394B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F806BAAE732D21BC4E798115E5C83067 /* FlatDropdown.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlatDropdown/FlatDropdown-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlatDropdown/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlatDropdown/FlatDropdown.modulemap";
-				PRODUCT_MODULE_NAME = FlatDropdown;
-				PRODUCT_NAME = FlatDropdown;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		29B8EDE3872B5A817F34700955C12006 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5FE1595DD3DE58DF1A92694AF35B0A8A /* Pods-FlatDropdown_Tests.debug.xcconfig */;
@@ -618,38 +550,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		368A1C66649ACBD998804891FD13CBFC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F806BAAE732D21BC4E798115E5C83067 /* FlatDropdown.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlatDropdown/FlatDropdown-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlatDropdown/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlatDropdown/FlatDropdown.modulemap";
-				PRODUCT_MODULE_NAME = FlatDropdown;
-				PRODUCT_NAME = FlatDropdown;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -691,7 +591,40 @@
 			};
 			name = Debug;
 		};
-		7828371289551CC2B5C60FDD1AA7B6F1 /* Release */ = {
+		6B5BF4552403D96A5A9731960E433B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9742745DE517236E33C85293FF41A1CA /* FlatDropdown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlatDropdown/FlatDropdown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlatDropdown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlatDropdown/FlatDropdown.modulemap";
+				PRODUCT_MODULE_NAME = FlatDropdown;
+				PRODUCT_NAME = FlatDropdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CBE8859BC5AFD90EF8FB856B5387D7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61CC3E0360CAABDC6DA365D66465C436 /* FlatField.xcconfig */;
 			buildSettings = {
@@ -723,6 +656,70 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		824C8A80AD1B12F05FE43A3388A3B149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9742745DE517236E33C85293FF41A1CA /* FlatDropdown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlatDropdown/FlatDropdown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlatDropdown/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlatDropdown/FlatDropdown.modulemap";
+				PRODUCT_MODULE_NAME = FlatDropdown;
+				PRODUCT_NAME = FlatDropdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8533D0AE61B20519C0DA721E5DBD9C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61CC3E0360CAABDC6DA365D66465C436 /* FlatField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlatField/FlatField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlatField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlatField/FlatField.modulemap";
+				PRODUCT_MODULE_NAME = FlatField;
+				PRODUCT_NAME = FlatField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		AB15AFC016B3878E0AA778424C1ACA9D /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -931,11 +928,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B7E2E2C80D5E0CDF764E48D78C32C77 /* Build configuration list for PBXNativeTarget "FlatDropdown" */ = {
+		300F0B848C1899663112BC52033BC438 /* Build configuration list for PBXNativeTarget "FlatDropdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				368A1C66649ACBD998804891FD13CBFC /* Debug */,
-				0B56495C06CDA6BC277CF2289AD394B3 /* Release */,
+				824C8A80AD1B12F05FE43A3388A3B149 /* Debug */,
+				6B5BF4552403D96A5A9731960E433B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BFED077280274501DD7281D6C8DD28A /* Build configuration list for PBXNativeTarget "FlatField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8533D0AE61B20519C0DA721E5DBD9C5D /* Debug */,
+				7CBE8859BC5AFD90EF8FB856B5387D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -945,15 +951,6 @@
 			buildConfigurations = (
 				4B672C3B6BD3B7F6D39BCE4088672C13 /* Debug */,
 				CBFF6901C3DC8EBDF976153C558DEC9F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0451DC28162928034349F73068C5355 /* Build configuration list for PBXNativeTarget "FlatField" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0583EF7C10C61181D5577CAAFF87BED4 /* Debug */,
-				7828371289551CC2B5C60FDD1AA7B6F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

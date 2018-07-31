@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol FloatingLabelDelegate {
+public protocol FlatFieldDelegate {
     func editingBegan(_ sender: FlatField)
     func textChanged(_ sender: FlatField)
 }
