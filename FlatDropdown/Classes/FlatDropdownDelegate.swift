@@ -8,9 +8,11 @@
 import FlatField
 
 public protocol FlatDropdownDelegate {
+    var flatDropdown: FlatDropdown! { get set }
+    
     func didBeginEditing(_ sender: FlatField)
     func textDidChange(_ sender: FlatField)
     func didEndEditing(_ sender: FlatField)
     
-    func didSelectRow(_ at: IndexPath, _ sender: UITableView)
+    func didSelectRow(_ at: IndexPath, _ sender: FlatDropdown)
 }

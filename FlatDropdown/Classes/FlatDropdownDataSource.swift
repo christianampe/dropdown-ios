@@ -19,7 +19,7 @@ public protocol FlatDropdownDataSource {
     // MARK: Set Methods
 }
 
-extension FlatDropdownDataSource {
+public extension FlatDropdownDataSource {
     func numberOfRows(for section: Int) -> Int? {
         guard numberOfSections() >= section + 1 else {
             return nil

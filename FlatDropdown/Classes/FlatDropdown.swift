@@ -94,6 +94,13 @@ open class FlatDropdown: UIView {
         }
     }
     
+    @IBInspectable
+    open var dropdownCellHeight: CGFloat = FlatDropdownConfig.default.dropdownCellHeight {
+        didSet {
+            tableView.rowHeight = dropdownCellHeight
+        }
+    }
+    
     // MARK: Flat Dropdown IBInspectables
     @IBInspectable
     open var maxNumberOfResultsPerSectionToDisplay: Int = FlatDropdownConfig.default.numberOfResults {
@@ -195,10 +202,9 @@ private extension FlatDropdown {
         
         flatField.translatesAutoresizingMaskIntoConstraints = false
         
+        flatField.topAnchor.constraint(equalTo: topAnchor).isActive = true
         flatField.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         flatField.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        flatField.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        flatField.topAnchor.constraint(equalTo: topAnchor).isActive = true
         
         let flatFieldHeightAnchor = flatField.heightAnchor.constraint(equalToConstant: flatFieldHeight)
         flatFieldHeightAnchor.isActive = true
@@ -207,10 +213,10 @@ private extension FlatDropdown {
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
+        tableView.topAnchor.constraint(equalTo: flatField.bottomAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        tableView.topAnchor.constraint(equalTo: topAnchor).isActive = true
     }
     
     func initConfig(_ config: FlatDropdownConfig = .default,
@@ -301,6 +307,12 @@ extension FlatDropdown: UITableViewDelegate {
     public func tableView(_ tableView: UITableView,
                           didSelectRowAt indexPath: IndexPath) {
         
-        delegate?.didSelectRow(indexPath, tableView)
+        delegate?.didSelectRow(indexPath, self)
+    }
+    
+    public func tableView(_ tableView: UITableView,
+                          heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return dropdownCellHeight
     }
 }

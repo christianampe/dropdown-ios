@@ -21,6 +21,7 @@ open class FlatDropdownCell: UITableViewCell {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        initViews()
         addViews()
         addConstraints()
     }
@@ -31,6 +32,7 @@ open class FlatDropdownCell: UITableViewCell {
         
         super.init(coder: aDecoder)
         
+        initViews()
         addViews()
         addConstraints()
     }
@@ -41,6 +43,10 @@ public extension FlatDropdownCell {
 }
 
 private extension FlatDropdownCell {
+    func initViews() {
+        selectionStyle = .none
+    }
+    
     func addViews() {
         addSubview(label)
     }
