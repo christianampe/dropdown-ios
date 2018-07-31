@@ -22,7 +22,7 @@ open class FlatDropdown: UIView {
     // MARK: Properties
     open weak var flatFieldHeightConstraint: NSLayoutConstraint!
     
-    // MARK: IBInspectables
+    // MARK: Flat Field IBInspectables
     @IBInspectable
     open var text: String = FlatFieldConfig.default.text {
         didSet {
@@ -75,6 +75,7 @@ open class FlatDropdown: UIView {
     open var textAlignment: Int = FlatFieldConfig.default.textAlignment.rawValue {
         didSet {
             guard let alignment = NSTextAlignment(rawValue: textAlignment) else {
+                
                 assert(false, "use a valid alignment mapping integer (0-4)")
                 return
             }
@@ -93,13 +94,32 @@ open class FlatDropdown: UIView {
         }
     }
     
+    // MARK: Flat Dropdown IBInspectables
+    @IBInspectable
+    open var maxNumberOfResultsPerSectionToDisplay: Int = FlatDropdownConfig.default.numberOfResults {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    @IBInspectable
+    open var maxNumberOfSectionsToDisplay: Int = FlatDropdownConfig.default.numberOfSections {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     // MARK: Designable Initalizers
     public convenience init() {
+        
         self.init(frame: CGRect.zero)
     }
     
     public override convenience init(frame: CGRect) {
-        self.init(frame, config: FlatFieldConfig.default, dataSource: nil, delegate: nil)
+        
+        self.init(frame, config: FlatFieldConfig.default,
+                  dataSource: nil,
+                  delegate: nil)
     }
     
     // MARK: Programmatic Initalizer
@@ -152,22 +172,27 @@ open class FlatDropdown: UIView {
 // MARK: - Setup Methods
 private extension FlatDropdown {
     func setupFlatField() {
+        
         flatField.delegate = self
     }
     
     func setupTableView() {
-        tableView.register(FlatDropdownCell.self, forCellReuseIdentifier: FlatDropdownCell.reuseIdentifier)
+        
+        tableView.register(FlatDropdownCell.self,
+                           forCellReuseIdentifier: FlatDropdownCell.reuseIdentifier)
         
         tableView.dataSource = self
         tableView.delegate = self
     }
     
     func addViews() {
+        
         addSubview(flatField)
         addSubview(tableView)
     }
     
     func addContraints() {
+        
         flatField.translatesAutoresizingMaskIntoConstraints = false
         
         flatField.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
@@ -205,10 +230,12 @@ private extension FlatDropdown {
 // MARK: - Flat Field Delegate Conformance
 extension FlatDropdown: FlatFieldDelegate {
     public func editingBegan(_ sender: FlatField) {
+        
         delegate?.didBeginEditing(sender)
     }
     
     public func textChanged(_ sender: FlatField) {
+        
         delegate?.textDidChange(sender)
     }
 }
@@ -216,25 +243,54 @@ extension FlatDropdown: FlatFieldDelegate {
 // MARK: - Table View Data Source Conformance
 extension FlatDropdown: UITableViewDataSource {
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        
+        guard let dataSource = dataSource else {
+            
+            return 0
+        }
+        
+        return min(dataSource.numberOfSections(), maxNumberOfSectionsToDisplay)
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+    public func tableView(_ tableView: UITableView,
+                          numberOfRowsInSection section: Int) -> Int {
+        
+        guard let dataSource = dataSource else {
+            
+            return 0
+        }
+        
+        guard let rowCount = dataSource.numberOfRows(for: section) else {
+            
+            return 0
+        }
+        
+        return min(rowCount, maxNumberOfResultsPerSectionToDisplay)
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FlatDropdownCell.reuseIdentifier, for: indexPath) as? FlatDropdownCell else {
+    public func tableView(_ tableView: UITableView,
+                          cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FlatDropdownCell.reuseIdentifier,
+                                                       for: indexPath) as? FlatDropdownCell else {
+                                                        
             assert(false, "table view cell registration inconsistency")
             return UITableViewCell()
         }
         
         guard let dataSource = dataSource else {
+            
             assert(false, "a data source must be provided")
             return UITableViewCell()
         }
         
-        cell.update(dataSource.text(for: indexPath))
+        guard let text = dataSource.text(for: indexPath) else {
+            
+            assert(false, "internal inconsistency - file a bug")
+            return UITableViewCell()
+        }
+        
+        cell.update(text)
         
         return cell
     }
@@ -242,7 +298,9 @@ extension FlatDropdown: UITableViewDataSource {
 
 // MARK: - Table View Delegate Conformance
 extension FlatDropdown: UITableViewDelegate {
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView,
+                          didSelectRowAt indexPath: IndexPath) {
+        
         delegate?.didSelectRow(indexPath, tableView)
     }
 }
