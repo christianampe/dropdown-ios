@@ -296,11 +296,11 @@
 			isa = PBXGroup;
 			children = (
 				2E4F434B2908BEC74A3915881B61AA0D /* FlatDropdown.swift */,
-				0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */,
-				52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */,
 				C6372F0A029FA414E261199CF6BEE290 /* FlatDropdownDelegate.swift */,
+				52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */,
 				BF2C7B1A210FF4E500DC9C17 /* FlatDropdownCell.swift */,
 				BF2C7B19210FF4E400DC9C17 /* FlatDropdownTableView.swift */,
+				0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */,
 				2639FCA028283F555968B8308CC27DE4 /* Pod */,
 				6E0DD273E5D398E656711F584A806622 /* Support Files */,
 			);

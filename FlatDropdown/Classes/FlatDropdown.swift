@@ -9,11 +9,15 @@ import FlatField
 
 // MARK: - Class Declaration
 @IBDesignable
-open class FlatDropdown<Model>: UIView {
+open class FlatDropdown: UIView {
     
     // MARK: Views
     open weak var flatField: FlatField!
     open weak var tableView: UITableView!
+    
+    // MARK: Storage
+    open var delegate: FlatDropdownDelegate?
+    open var dataSource: FlatDropdownDataSource?
     
     // MARK: Properties
     open weak var flatFieldHeightConstraint: NSLayoutConstraint!
@@ -89,19 +93,20 @@ open class FlatDropdown<Model>: UIView {
         }
     }
     
-    // MARK: Required Initalizers
+    // MARK: Designable Initalizers
     public convenience init() {
         self.init(frame: CGRect.zero)
     }
     
     public override convenience init(frame: CGRect) {
-        self.init(frame, config: FlatFieldConfig.default, delegate: nil)
+        self.init(frame, config: FlatFieldConfig.default, dataSource: nil, delegate: nil)
     }
     
     // MARK: Programmatic Initalizer
     public init(_ frame: CGRect,
                 config: FlatFieldConfig,
-                delegate: FloatingLabelDelegate?) {
+                dataSource: FlatDropdownDataSource?,
+                delegate: FlatDropdownDelegate?) {
         
         let flatField = FlatField()
         self.flatField = flatField
@@ -109,7 +114,12 @@ open class FlatDropdown<Model>: UIView {
         let tableView = UITableView()
         self.tableView = tableView
         
+        self.dataSource = dataSource
+        
         super.init(frame: frame)
+        
+        setupFlatField()
+        setupTableView()
         
         addViews()
         addContraints()
@@ -128,6 +138,9 @@ open class FlatDropdown<Model>: UIView {
         
         super.init(coder: aDecoder)
         
+        setupFlatField()
+        setupTableView()
+        
         addViews()
         addContraints()
         
@@ -137,6 +150,17 @@ open class FlatDropdown<Model>: UIView {
 
 // MARK: - Setup Methods
 private extension FlatDropdown {
+    func setupFlatField() {
+        flatField.delegate = self
+    }
+    
+    func setupTableView() {
+        tableView.register(FlatDropdownCell.self, forCellReuseIdentifier: FlatDropdownCell.reuseIdentifier)
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
     func addViews() {
         addSubview(flatField)
         addSubview(tableView)
@@ -174,5 +198,50 @@ private extension FlatDropdown {
         underlineThickness = flatFieldConfig.underlineThickness
         thicknessChange = flatFieldConfig.thicknessChange
         textAlignment = flatFieldConfig.textAlignment.rawValue
+    }
+}
+
+// MARK: - Flat Field Delegate Conformance
+extension FlatDropdown: FlatFieldDelegate {
+    public func editingBegan(_ sender: FlatField) {
+        delegate?.didBeginEditing(sender)
+    }
+    
+    public func textChanged(_ sender: FlatField) {
+        delegate?.textDidChange(sender)
+    }
+}
+
+// MARK: - Table View Data Source Conformance
+extension FlatDropdown: UITableViewDataSource {
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FlatDropdownCell.reuseIdentifier, for: indexPath) as? FlatDropdownCell else {
+            assert(false, "table view cell registration inconsistency")
+            return UITableViewCell()
+        }
+        
+        guard let dataSource = dataSource else {
+            assert(false, "a data source must be provided")
+            return UITableViewCell()
+        }
+        
+        cell.update(dataSource.text(for: indexPath))
+        
+        return cell
+    }
+}
+
+// MARK: - Table View Delegate Conformance
+extension FlatDropdown: UITableViewDelegate {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.didSelectRow(indexPath, tableView)
     }
 }

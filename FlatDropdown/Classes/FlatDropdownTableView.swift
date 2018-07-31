@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol FlatDropdownTableView where Self: UITableView {
+open class FlatDropdownTableView: UITableView {
     
 }
