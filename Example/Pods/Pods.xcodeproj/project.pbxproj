@@ -22,6 +22,8 @@
 		BF2C7B0C210FAC3700DC9C17 /* FlatDropdownConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B0B210FAC3700DC9C17 /* FlatDropdownConfig.swift */; };
 		BF2C7B0E210FB6A800DC9C17 /* FlatDropdownDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B0D210FB6A800DC9C17 /* FlatDropdownDataSource.swift */; };
 		BF2C7B10210FB6B700DC9C17 /* FlatDropdownDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B0F210FB6B700DC9C17 /* FlatDropdownDelegate.swift */; };
+		BF2C7B12210FEA8000DC9C17 /* FlatDropdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B11210FEA8000DC9C17 /* FlatDropdownCell.swift */; };
+		BF2C7B18210FF2F300DC9C17 /* FlatDropdownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B17210FF2F300DC9C17 /* FlatDropdownTableView.swift */; };
 		C8D2C48108A8CB1A61EA02CCE3322DF2 /* FlatField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A12AF3010793B5A14D71B58FBEBCAC76 /* FlatField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6D9594E95FCFA9430515F905F1A8498 /* Pods-FlatDropdown_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB7EF9E93F8AC85719B72D4551FB6 /* Pods-FlatDropdown_Example-dummy.m */; };
 		D9C27CDE95518A4B276B55DCEDA7FFE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
@@ -99,6 +101,8 @@
 		BF2C7B0B210FAC3700DC9C17 /* FlatDropdownConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatDropdownConfig.swift; path = FlatDropdown/Classes/FlatDropdownConfig.swift; sourceTree = "<group>"; };
 		BF2C7B0D210FB6A800DC9C17 /* FlatDropdownDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlatDropdownDataSource.swift; path = FlatDropdown/Classes/FlatDropdownDataSource.swift; sourceTree = "<group>"; };
 		BF2C7B0F210FB6B700DC9C17 /* FlatDropdownDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FlatDropdownDelegate.swift; path = FlatDropdown/Classes/FlatDropdownDelegate.swift; sourceTree = "<group>"; };
+		BF2C7B11210FEA8000DC9C17 /* FlatDropdownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatDropdownCell.swift; sourceTree = "<group>"; };
+		BF2C7B17210FF2F300DC9C17 /* FlatDropdownTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatDropdownTableView.swift; sourceTree = "<group>"; };
 		C33D83FE76C93BA3CABC350A4719F29A /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41F33C8FD7CBC21A30187828C877FDA /* Pods-FlatDropdown_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlatDropdown_Tests.modulemap"; sourceTree = "<group>"; };
 		E2AECC21EF75C8766B057BEA4ABAD044 /* FlatDropdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlatDropdown-dummy.m"; sourceTree = "<group>"; };
@@ -238,9 +242,11 @@
 			isa = PBXGroup;
 			children = (
 				9075F4625E39286DEAD8671331CE7630 /* FlatDropdown.swift */,
-				BF2C7B0B210FAC3700DC9C17 /* FlatDropdownConfig.swift */,
+				BF2C7B11210FEA8000DC9C17 /* FlatDropdownCell.swift */,
+				BF2C7B17210FF2F300DC9C17 /* FlatDropdownTableView.swift */,
 				BF2C7B0F210FB6B700DC9C17 /* FlatDropdownDelegate.swift */,
 				BF2C7B0D210FB6A800DC9C17 /* FlatDropdownDataSource.swift */,
+				BF2C7B0B210FAC3700DC9C17 /* FlatDropdownConfig.swift */,
 				CDE348F6FF7561379584C7C2EE1CA154 /* Pod */,
 				A4073096CA8A138C4BD613847AF04BDD /* Support Files */,
 			);
@@ -464,9 +470,11 @@
 			files = (
 				050A202DFBDFC88D19E163A0B08C5293 /* FlatDropdown-dummy.m in Sources */,
 				823B7B8CEDAD0152FC57A096DD0BDDB4 /* FlatDropdown.swift in Sources */,
+				BF2C7B18210FF2F300DC9C17 /* FlatDropdownTableView.swift in Sources */,
 				BF2C7B0E210FB6A800DC9C17 /* FlatDropdownDataSource.swift in Sources */,
 				BF2C7B0C210FAC3700DC9C17 /* FlatDropdownConfig.swift in Sources */,
 				BF2C7B10210FB6B700DC9C17 /* FlatDropdownDelegate.swift in Sources */,
+				BF2C7B12210FEA8000DC9C17 /* FlatDropdownCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

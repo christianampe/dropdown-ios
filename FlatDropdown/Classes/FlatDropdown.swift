@@ -9,7 +9,7 @@ import FlatField
 
 // MARK: - Class Declaration
 @IBDesignable
-open class FlatDropdown: UIView {
+open class FlatDropdown<Model>: UIView {
     
     // MARK: Views
     open weak var flatField: FlatField!
