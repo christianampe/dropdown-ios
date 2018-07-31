@@ -23,6 +23,8 @@
 		80081B6A2BF61DF3228B1698C8A2E5D7 /* FlatDropdownDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */; };
 		A8E84D0FE2225CBA40E2973330FA1857 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
 		A909E994775CBC7A9F79FB9DF15A66F8 /* FlatField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33D83FE76C93BA3CABC350A4719F29A /* FlatField.framework */; };
+		BF2C7B1B210FF4E500DC9C17 /* FlatDropdownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B19210FF4E400DC9C17 /* FlatDropdownTableView.swift */; };
+		BF2C7B1C210FF4E500DC9C17 /* FlatDropdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7B1A210FF4E500DC9C17 /* FlatDropdownCell.swift */; };
 		C93E9F07D297CFE58CC493736DBD3EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */; };
 		D6D9594E95FCFA9430515F905F1A8498 /* Pods-FlatDropdown_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5FB7EF9E93F8AC85719B72D4551FB6 /* Pods-FlatDropdown_Example-dummy.m */; };
 		ECD4264E2A4D31F2BB47E66C2676552B /* FlatDropdownConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */; };
@@ -62,35 +64,35 @@
 
 /* Begin PBXFileReference section */
 		035860F58C869809BE5595147324C90D /* Pods-FlatDropdown_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlatDropdown_Example.modulemap"; sourceTree = "<group>"; };
-		0441321BD620C79F165211188EF5D11B /* Pods_FlatDropdown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlatDropdown_Tests.framework; path = "Pods-FlatDropdown_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0441321BD620C79F165211188EF5D11B /* Pods_FlatDropdown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatDropdown_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownConfig.swift; path = FlatDropdown/Classes/FlatDropdownConfig.swift; sourceTree = "<group>"; };
 		11867BFAB36487C43288C05D141C8994 /* Pods-FlatDropdown_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlatDropdown_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2466267A3770D52443DD9D35B16A078A /* Pods_FlatDropdown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlatDropdown_Example.framework; path = "Pods-FlatDropdown_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2466267A3770D52443DD9D35B16A078A /* Pods_FlatDropdown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatDropdown_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4F434B2908BEC74A3915881B61AA0D /* FlatDropdown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdown.swift; path = FlatDropdown/Classes/FlatDropdown.swift; sourceTree = "<group>"; };
-		324D8034767DBAA3143C2A8AAB56D7FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		324D8034767DBAA3143C2A8AAB56D7FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		37A8DCA0C4FFE20926A4ADF8B036AF04 /* Pods-FlatDropdown_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlatDropdown_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3CD70CB70B2E82120ECD52C998A4DC6D /* Pods-FlatDropdown_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3F38547A2480E8644D61F6CC075B5FF7 /* FlatDropdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-prefix.pch"; sourceTree = "<group>"; };
 		428B3733BBD0A5A51A8BEEA6F8AA70C8 /* FlatField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlatField.modulemap; sourceTree = "<group>"; };
 		4ADE106459D80CB05510138492C6C660 /* Pods-FlatDropdown_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlatDropdown_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		51F16E18485A07A20D975D2A1821C835 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		51F16E18485A07A20D975D2A1821C835 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownDataSource.swift; path = FlatDropdown/Classes/FlatDropdownDataSource.swift; sourceTree = "<group>"; };
 		55777928366678F07DDD6ED8797B2586 /* Pods-FlatDropdown_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Example-frameworks.sh"; sourceTree = "<group>"; };
 		587F560181463352C6B02464831A6856 /* FlatFieldConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatFieldConfig.swift; path = FlatField/Classes/FlatFieldConfig.swift; sourceTree = "<group>"; };
 		5FE1595DD3DE58DF1A92694AF35B0A8A /* Pods-FlatDropdown_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlatDropdown_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6029E5349C8EF49557C6C52599C09660 /* Pods-FlatDropdown_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlatDropdown_Tests-dummy.m"; sourceTree = "<group>"; };
 		61CC3E0360CAABDC6DA365D66465C436 /* FlatField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlatField.xcconfig; sourceTree = "<group>"; };
-		648B30DC8B813AD489C0038EBB127B4E /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlatField.framework; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		648B30DC8B813AD489C0038EBB127B4E /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711E345CD2956596D18D211533C71DB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		729D5B30D10CF91CB10277D08D11FBCE /* FlatField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlatField-dummy.m"; sourceTree = "<group>"; };
-		76F820752B9106706999FB79F1816A54 /* FlatDropdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlatDropdown.framework; path = FlatDropdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F820752B9106706999FB79F1816A54 /* FlatDropdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatDropdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6723ABD698A5D018D5D64BB141C9CA /* Pods-FlatDropdown_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlatDropdown_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		850111E99B10551454A6990F3D78626C /* Pods-FlatDropdown_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlatDropdown_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		865E72CD42A17C8BF42EFCBF9A82F378 /* Pods-FlatDropdown_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Example-resources.sh"; sourceTree = "<group>"; };
 		87FD3F3CD4514A1047D671E4B40A19CD /* Pods-FlatDropdown_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlatDropdown_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		89F7389CA40C612681DC328459D4662E /* FlatField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatField.swift; path = FlatField/Classes/FlatField.swift; sourceTree = "<group>"; };
 		90D8741DEBB27902428C72B5C99D9378 /* Pods-FlatDropdown_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlatDropdown_Example-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9742745DE517236E33C85293FF41A1CA /* FlatDropdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlatDropdown.xcconfig; sourceTree = "<group>"; };
 		9BC048E1687E5B9FE91DE4F5BF13CB5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A115476757E03F4D588FE943D372D454 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,12 +100,14 @@
 		A6907FD917ED7CBD20DDF26D507BB0A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE22B4DBF7471E815F76D4391D0C2448 /* FlatField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatField-prefix.pch"; sourceTree = "<group>"; };
 		BC5FB7EF9E93F8AC85719B72D4551FB6 /* Pods-FlatDropdown_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlatDropdown_Example-dummy.m"; sourceTree = "<group>"; };
+		BF2C7B19210FF4E400DC9C17 /* FlatDropdownTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatDropdownTableView.swift; path = FlatDropdown/Classes/FlatDropdownTableView.swift; sourceTree = "<group>"; };
+		BF2C7B1A210FF4E500DC9C17 /* FlatDropdownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatDropdownCell.swift; path = FlatDropdown/Classes/FlatDropdownCell.swift; sourceTree = "<group>"; };
 		C040FC73A354005B89B5B5F079AB6D4F /* FlatFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatFieldDelegate.swift; path = FlatField/Classes/FlatFieldDelegate.swift; sourceTree = "<group>"; };
 		C060A579A3A7FEB3C01CD776FB7350DC /* FlatDropdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlatDropdown-dummy.m"; sourceTree = "<group>"; };
 		C33D83FE76C93BA3CABC350A4719F29A /* FlatField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41F33C8FD7CBC21A30187828C877FDA /* Pods-FlatDropdown_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlatDropdown_Tests.modulemap"; sourceTree = "<group>"; };
 		C6372F0A029FA414E261199CF6BEE290 /* FlatDropdownDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatDropdownDelegate.swift; path = FlatDropdown/Classes/FlatDropdownDelegate.swift; sourceTree = "<group>"; };
-		D2FCFF909117CEB0784048EF6253FFCC /* FlatDropdown.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FlatDropdown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D2FCFF909117CEB0784048EF6253FFCC /* FlatDropdown.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FlatDropdown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DBDE3ABAF736FFA8C0C793B07477AAD3 /* FlatDropdown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlatDropdown.modulemap; sourceTree = "<group>"; };
 		EA9DF5A5E68F4D98FE2C3DF79208750E /* FlatDropdown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlatDropdown-umbrella.h"; sourceTree = "<group>"; };
 		EC515737A4DE9DF78218D6514978E0E9 /* Pods-FlatDropdown_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlatDropdown_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -277,7 +281,6 @@
 				C040FC73A354005B89B5B5F079AB6D4F /* FlatFieldDelegate.swift */,
 				2CD486E398A39386C1141BE556674213 /* Support Files */,
 			);
-			name = FlatField;
 			path = FlatField;
 			sourceTree = "<group>";
 		};
@@ -296,6 +299,8 @@
 				0DEC702F77548E9C266C2A47FBF2D2F5 /* FlatDropdownConfig.swift */,
 				52D6F5F6C9AF50B1BF05E786DEF22074 /* FlatDropdownDataSource.swift */,
 				C6372F0A029FA414E261199CF6BEE290 /* FlatDropdownDelegate.swift */,
+				BF2C7B1A210FF4E500DC9C17 /* FlatDropdownCell.swift */,
+				BF2C7B19210FF4E400DC9C17 /* FlatDropdownTableView.swift */,
 				2639FCA028283F555968B8308CC27DE4 /* Pod */,
 				6E0DD273E5D398E656711F584A806622 /* Support Files */,
 			);
@@ -486,8 +491,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFCFB8977EAA4E404DA93DBC4F2CF7B4 /* FlatDropdown-dummy.m in Sources */,
+				BF2C7B1C210FF4E500DC9C17 /* FlatDropdownCell.swift in Sources */,
 				204A1260A2BC856D76C755FFA23471D1 /* FlatDropdown.swift in Sources */,
 				ECD4264E2A4D31F2BB47E66C2676552B /* FlatDropdownConfig.swift in Sources */,
+				BF2C7B1B210FF4E500DC9C17 /* FlatDropdownTableView.swift in Sources */,
 				80081B6A2BF61DF3228B1698C8A2E5D7 /* FlatDropdownDataSource.swift in Sources */,
 				5EB0741E899A47F9955A68BD07DDCBF9 /* FlatDropdownDelegate.swift in Sources */,
 			);
