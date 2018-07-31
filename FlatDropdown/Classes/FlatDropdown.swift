@@ -115,6 +115,7 @@ open class FlatDropdown: UIView {
         self.tableView = tableView
         
         self.dataSource = dataSource
+        self.delegate = delegate
         
         super.init(frame: frame)
         
