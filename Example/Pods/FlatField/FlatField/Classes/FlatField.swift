@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - Properties
+// MARK: - Class Declaration
 @IBDesignable
 open class FlatField: UIView {
     
@@ -71,6 +71,7 @@ open class FlatField: UIView {
     open var textAlignment: Int = FlatFieldConfig.default.textAlignment.rawValue {
         didSet {
             guard let alignment = NSTextAlignment(rawValue: textAlignment) else {
+                
                 assert(false, "use a valid alignment mapping integer (0-4)")
                 return
             }
@@ -88,7 +89,10 @@ open class FlatField: UIView {
     }
     
     public override convenience init(frame: CGRect) {
-        self.init(frame, config: FlatFieldConfig.default, delegate: nil)
+        
+        self.init(frame,
+                  config: FlatFieldConfig.default,
+                  delegate: nil)
     }
     
     // MARK: Programmatic Initalizer
@@ -114,6 +118,7 @@ open class FlatField: UIView {
     
     // MARK: Storyboard Initalizer
     public required init?(coder aDecoder: NSCoder) {
+        
         let field = UITextField()
         textField = field
         
@@ -130,6 +135,7 @@ open class FlatField: UIView {
     
     // MARK: Setup Methods
     private func initConfig(_ config: FlatFieldConfig = FlatFieldConfig.default) {
+        
         text = config.text
         placeholderText = config.placeholderText
         textColor = config.textColor
@@ -141,6 +147,7 @@ open class FlatField: UIView {
     }
     
     private func addViews() {
+        
         addSubview(textField)
         addSubview(underline)
         
@@ -148,6 +155,7 @@ open class FlatField: UIView {
     }
     
     private func addContraints() {
+        
         textField.translatesAutoresizingMaskIntoConstraints = false
         
         textField.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
@@ -174,17 +182,26 @@ open class FlatField: UIView {
 // MARK: - Text Field Delegate Conformance
 extension FlatField: UITextFieldDelegate {
     public func textFieldDidBeginEditing(_ sender: UITextField) {
+        
         delegate?.editingBegan(self)
         
         textField.tintColor = cursorColor
-        underlineHeightConstraint.constant += thicknessChange
+        underlineHeightConstraint.constant = underlineThickness + thicknessChange
     }
     
     public func textFieldDidEndEditing(_ sender: UITextField) {
-        underlineHeightConstraint.constant -= thicknessChange
+        
+        delegate?.editingEnded(self)
+        
+        underlineHeightConstraint.constant = underlineThickness - thicknessChange
     }
     
-    public func textFieldValueChanged(_ sender: UITextField) {
+    public func textField(_ textField: UITextField,
+                          shouldChangeCharactersIn range: NSRange,
+                          replacementString string: String) -> Bool {
+        
         delegate?.textChanged(self)
+        
+        return true
     }
 }
