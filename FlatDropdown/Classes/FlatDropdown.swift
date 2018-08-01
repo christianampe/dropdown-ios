@@ -307,6 +307,8 @@ extension FlatDropdown: UITableViewDelegate {
     public func tableView(_ tableView: UITableView,
                           didSelectRowAt indexPath: IndexPath) {
         
+        flatField.textFieldDidEndEditing(flatField.textField)
+        
         delegate?.didSelectRow(indexPath, self)
     }
     
