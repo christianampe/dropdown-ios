@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,18 +23,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nP8-Ra-cAO" customClass="FlatDropdown" customModule="FlatDropdown">
-                                <rect key="frame" x="67" y="80" width="240" height="320"/>
+                                <rect key="frame" x="36" y="80" width="303" height="320"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="01U-oo-lP2"/>
                                     <constraint firstAttribute="height" constant="320" id="qgn-Ej-ZLZ"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nP8-Ra-cAO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="FrZ-Hh-qMl"/>
                             <constraint firstItem="nP8-Ra-cAO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="RwW-wO-kF5"/>
                             <constraint firstItem="nP8-Ra-cAO" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="m06-CZ-mS5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nP8-Ra-cAO" secondAttribute="trailing" constant="20" id="pE3-Kf-1ZT"/>
                         </constraints>
                     </view>
                     <connections>

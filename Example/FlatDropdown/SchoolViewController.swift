@@ -58,7 +58,7 @@ extension SchoolViewController {
             
             guard let autocomplete = response else {
                 
-                return // response not provided
+                return
             }
             
             let schoolNames = autocomplete.schools.map { $0.name.lowercased() }
