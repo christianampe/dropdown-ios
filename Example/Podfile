@@ -4,6 +4,7 @@ platform :ios, '9.3'
 target 'FlatDropdown_Example' do
     pod 'FlatDropdown', :path => '../'
     pod 'FlatField', '~> 0.0.5'
+    pod 'Moya', '~> 11.0'
     
     target 'FlatDropdown_Tests' do
         inherit! :search_paths
