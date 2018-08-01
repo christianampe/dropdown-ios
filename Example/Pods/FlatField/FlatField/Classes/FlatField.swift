@@ -193,7 +193,7 @@ extension FlatField: UITextFieldDelegate {
         
         delegate?.editingEnded(self)
         
-        underlineHeightConstraint.constant = underlineThickness - thicknessChange
+        underlineHeightConstraint.constant = underlineThickness
     }
     
     public func textField(_ textField: UITextField,

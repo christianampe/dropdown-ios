@@ -190,6 +190,8 @@ private extension FlatDropdown {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        tableView.keyboardDismissMode = .onDrag
     }
     
     func addViews() {
@@ -233,11 +235,32 @@ private extension FlatDropdown {
     }
 }
 
+// MARK: - Helper Methods
+private extension FlatDropdown {
+    func collapseTableView() {
+        
+        flatField.endEditing(true)
+        tableView.isHidden = true
+    }
+    
+    func showTableView() {
+        
+        tableView.isHidden = false
+    }
+}
+
 // MARK: - Flat Field Delegate Conformance
 extension FlatDropdown: FlatFieldDelegate {
     public func editingBegan(_ sender: FlatField) {
         
+        showTableView()
+        
         delegate?.didBeginEditing(sender)
+    }
+    
+    public func editingEnded(_ sender: FlatField) {
+        
+        delegate?.didEndEditing(sender)
     }
     
     public func textChanged(_ sender: FlatField) {
@@ -306,6 +329,8 @@ extension FlatDropdown: UITableViewDataSource {
 extension FlatDropdown: UITableViewDelegate {
     public func tableView(_ tableView: UITableView,
                           didSelectRowAt indexPath: IndexPath) {
+        
+        collapseTableView()
         
         flatField.textFieldDidEndEditing(flatField.textField)
         

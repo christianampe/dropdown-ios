@@ -38,7 +38,7 @@ extension ViewController: FlatDropdownDelegate {
     }
     
     func textDidChange(_ sender: FlatField) {
-        print(sender.textField.text)
+        // do nothing
     }
     
     func didEndEditing(_ sender: FlatField) {
