@@ -36,5 +36,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'FlatField', '~> 0.0.3'
+  s.dependency 'FlatField', '~> 0.0.5'
 end
