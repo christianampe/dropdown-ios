@@ -9,5 +9,5 @@
 import Moya
 
 class GovProvider {
-    static let provider = MoyaProvider<Networking.Gov.Methods.Wrapper>()
+    static let provider = MoyaProvider<Methods.Wrapper>()
 }

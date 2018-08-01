@@ -191,6 +191,7 @@ private extension FlatDropdown {
         tableView.dataSource = self
         tableView.delegate = self
         
+        tableView.isScrollEnabled = false
         tableView.keyboardDismissMode = .onDrag
     }
     

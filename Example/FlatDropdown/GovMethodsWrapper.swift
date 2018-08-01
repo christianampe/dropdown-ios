@@ -8,7 +8,7 @@
 
 import Moya
 
-extension Networking.Gov.Methods {
+struct Methods {
     
     enum Wrapper {
         case autocomplete(text: String)
@@ -17,16 +17,16 @@ extension Networking.Gov.Methods {
 }
 
 // MARK: - TargetType Protocol Implementation
-extension Networking.Gov.Methods.Wrapper: TargetType {
+extension Methods.Wrapper: TargetType {
     
     var baseURL: URL {
-        return URL(string: Networking.Gov.Constants.CollegeScoreCard.baseUrl.rawValue)!
+        return URL(string: Constants.CollegeScoreCard.baseUrl.rawValue)!
     }
     
     var path: String {
         switch self {
         case .autocomplete:
-            return Networking.Gov.Constants.Endpoints.school.rawValue
+            return Constants.Endpoints.school.rawValue
         }
     }
     
@@ -40,10 +40,10 @@ extension Networking.Gov.Methods.Wrapper: TargetType {
     var task: Task {
         switch self {
         case let .autocomplete(text):
-            return .requestParameters(parameters: [Networking.Gov.Constants.FieldParameters.autocomplete.rawValue: text,
-                Networking.Gov.Constants.OptionParameters.fields.rawValue: "id,school.name",
-                Networking.Gov.Constants.QueryParameters.apiKey.rawValue:
-                    Networking.Gov.Constants.CollegeScoreCard.apiKey.rawValue],
+            return .requestParameters(parameters: [Constants.FieldParameters.autocomplete.rawValue: text,
+                                                   Constants.OptionParameters.fields.rawValue: "id,school.name",
+                                                   Constants.QueryParameters.apiKey.rawValue:
+                                                    Constants.CollegeScoreCard.apiKey.rawValue],
                                       encoding: URLEncoding.queryString)
         }
     }

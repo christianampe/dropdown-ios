@@ -9,13 +9,13 @@
 import Moya
 
 // MARK: - Autocomplete Methods
-extension Networking.Gov.Methods.Autocomplete {
+struct Autocomplete {
     
     //
     // Make Request To API To Get List Of Colleges Back
     //
     static func schoolName(with input: String, handler: @escaping (AutocompleteResponse?) -> ()) {
-        provider.request(.autocomplete(text: input)) { (result) in
+        GovProvider.provider.request(.autocomplete(text: input)) { (result) in
             switch result {
             case let .success(response):
                 handler(autocompleteModel(from: response))
@@ -29,7 +29,7 @@ extension Networking.Gov.Methods.Autocomplete {
 }
 
 // MARK: - Helper Methods
-private extension Networking.Gov.Methods.Autocomplete {
+private extension Autocomplete {
     
     //
     // Success Methods

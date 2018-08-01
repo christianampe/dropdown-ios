@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--School View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FlatDropdown_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="SchoolViewController" customModule="FlatDropdown_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -22,23 +22,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nP8-Ra-cAO" customClass="FlatDropdown" customModule="FlatDropdown">
-                                <rect key="frame" x="67" y="173" width="240" height="320"/>
+                                <rect key="frame" x="67" y="80" width="240" height="320"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="01U-oo-lP2"/>
                                     <constraint firstAttribute="height" constant="320" id="qgn-Ej-ZLZ"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxNumberOfSectionsToDisplay">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nP8-Ra-cAO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="RwW-wO-kF5"/>
                             <constraint firstItem="nP8-Ra-cAO" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="m06-CZ-mS5"/>
-                            <constraint firstItem="nP8-Ra-cAO" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="trR-Eo-7oi"/>
                         </constraints>
                     </view>
                     <connections>

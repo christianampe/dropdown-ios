@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Networking.Gov.Constants {
+struct Constants {
     
     enum CollegeScoreCard: String {
         case apiKey = "Maienbui9tNu1E3HQzPNY519alRjCtm4t8cvEh6w"
